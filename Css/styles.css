@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:chartreuse
+}
+
+.wrapper {
+  display: grid;
+  width: 70%;
+  height: 60%;
+  grid-auto-columns: 1fr;
+  gap: 1em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.box,
+.box2 {
+  height: 12em;
+  border: 3px solid black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.box:nth-child(1) {
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 3em;
+}
+.box:nth-child(2) {
+  background-image:url(".././img/fondoreal.jpg") ;
+  background-size: 100%;
+  background-position: 10% 40%;
+  grid-row: 1;
+}
+
+.container-photo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.box2:nth-child(1) {
+  background-image: url("../img/18943984.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+.box2:nth-child(2) {
+  background-image: url("../img/SI_Pokemon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.box2:nth-child(3) {
+  height: auto;
+  background-image: url("../img/messi.jpg");
+  background-position: 40% 11%;
+  background-size: cover;
+  grid-row: 1/3;
+  grid-column: 3/5;
+}
+
+.box2:nth-child(4) {
+  background-image: url("../img/catante.jpg");
+  background-size: cover;
+  background-position: 80% 12%;
+  grid-column: 5/-1;
+  grid-row: 1;
+}
+
+.box2:nth-child(5) {
+  background-image: url("../img/alfombrilla-pc-dragon-ball-bola.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 32%;
+  grid-column: 1/3;
+
+  grid-row: 2;
+}
+.box2:nth-child(6) {
+  background-image: url("../img/SI_Pokemon.jpg");
+  background-size: cover;
+  background-position: 10% 32%;
+
+  background-repeat: no-repeat;
+  grid-column: 5/-1;
+
+
+}
+.box2:nth-child(7) {
+  background-image: url("../img/treintayseis-ultima-fin-julio-U81558757452zqa-310x192@abc.jpg");
+  background-position: 10% 12%;
+  background-size: cover;
+  grid-column: 1/2;
+
+}
+.box2:nth-child(8) {
+  background-image: url("../img/sergio.jpg");
+  background-position: 10% 12%;
+  background-size: cover;
+  grid-column: 2/3;
+
+}
+.box2:nth-child(9) {
+  background-image: url("../img/maxresdefault.jpg");
+  background-position: 10% 38%;
+  background-size: cover;
+
+  grid-column: 3/6;
+}
